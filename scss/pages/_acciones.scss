@@ -1,0 +1,31 @@
+
+    
+    .card{
+    
+        margin: 1.8%;
+        padding: 0%;
+        background-image: linear-gradient(to right, #ae1d1d, #ae2020, #ae2323, #ae2626, #ae2929, #ae2c2c, #ae2e2e, #ae3131, #ae3434, #ae3737, #ae3a3a, #ae3d3d);
+        justify-content: center;
+    }
+    
+    .row {
+        justify-content: center;
+    }
+    
+    .row>* {
+    
+        max-width: 55%;
+    
+    }
+    
+    .card-title {
+        text-align: center;
+        background-color: ivory;
+    }
+    
+    .card-text {
+        color: black;
+    }
+
+
+

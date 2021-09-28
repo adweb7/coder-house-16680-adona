@@ -1,0 +1,32 @@
+footer {
+    display: grid;
+    grid-template-columns: auto;
+    background-image: linear-gradient(to right, #000000, #010001, #020002, #030003, #020005, #020007, #010008, #00000a, #00000c, #00000d, #00000f, #000010);
+    width: 100%;
+    height: 15vh;
+}
+
+.pie_de_pagina {
+    padding: 2px;
+    color: cornsilk;
+    padding-left: 30px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.pie_de_pagina div {
+    margin-top: 10px;
+}
+
+p{
+    color: cornsilk;
+    text-align-last: left;
+    font-weight: bold;
+    line-height: 1,4;
+}
+
+.redes{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}

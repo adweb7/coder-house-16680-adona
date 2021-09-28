@@ -1,0 +1,41 @@
+.foto_fundador { 
+    color: black;
+    text-align: center;
+    
+}
+
+.fotos_qs {
+      
+    height: 50vh;
+}
+
+#carouselExampleCaptions {
+    padding-left: 400px;
+    
+}
+
+section {
+    margin: 10px;
+}
+
+
+section div {
+    background-color:#cccccc;
+    color: black;
+    width: auto;
+    height: auto;
+    @include sizes(40px,20px )
+
+}
+  
+.informacion{
+    border: groove;
+    text-align: center;
+    @include sizes(20px,20px )
+}
+
+@mixin sizes ($margin,$padding) {
+    margin:$margin;
+    padding:$padding;
+}
+    

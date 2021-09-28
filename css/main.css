@@ -1,0 +1,209 @@
+/*RESETEO*/
+*{
+    margin: 0%;
+    padding: 0%;
+    }
+    
+    /* INICIO */
+    html{
+        font-family: 'Arima Madurai', cursive; 
+    }
+    
+    .container-fluid {
+        display: grid;
+        grid-template-columns: auto;
+        background: url(/public/encabezado.jpg);
+        width: 100%;
+        height: 20vh;
+    }
+    
+    
+    .navbar-light .navbar-nav .nav-link {
+        color: black;
+        padding-right: 4.6rem;
+        padding-left: 0.5rem;
+    }
+    
+    
+    
+    div a:hover {
+        background-color: tomato;
+        padding-right: 0.6rem;
+        padding-left: 0.5rem;
+    
+    }
+    
+    .navbar-collapse {
+        flex-basis: 100%;
+        flex-grow: initial;
+        align-items: center;
+    }
+    
+    .main_index{
+        display: flex;
+        justify-content: flex-start;
+        background-color: burlywood;
+        transform: translate(-35px,0px);
+        margin: 5vh;
+        height: 60vh;
+    }
+    
+    .medio_pagina{
+        display: grid;
+        grid-template-columns: 33,3% 33,3%;
+    }
+    
+    .medio_pagina div ul {
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between;
+    }
+    
+    .foto_medio {
+        width: 100%;
+        height: 50vh;
+    }
+    
+    .centro_abajo li {
+        display: inline-block;
+        justify-items: center;
+        padding: 3rem 8rem;
+    }
+    
+    .centro_abajo li a {
+        color: black;
+    }
+    
+    .centro_abajo li a:hover {
+        background-color: tomato;
+        overflow: hidden;
+    }
+    
+    /*SECCION MEDIO ABAJO */
+    
+    .frase {
+        background-color: #cccccc;
+        margin: 15px;
+        width: auto;
+        padding: 10px;
+    }
+    
+    .frase  {
+        text-align: center;
+    }
+    
+    section p {
+        background-color: #cccccc;
+        color: black;
+        width: auto;
+        height:auto;
+        padding: 10px;
+    }
+    
+    .parrafo_frase {
+        border: groove;
+        text-align: center;
+        margin: 20px;
+        padding: 10px;
+    }
+    
+    
+    /* FOOTER - FINAL DE PAGINA */
+    
+    footer {
+        display: grid;
+        grid-template-columns: auto;
+        background-image: linear-gradient(to right, #000000, #010001, #020002, #030003, #020005, #020007, #010008, #00000a, #00000c, #00000d, #00000f, #000010);
+        width: 100%;
+        height: 15vh;
+    }
+    
+    .pie_de_pagina {
+        padding: 2px;
+        color: cornsilk;
+        padding-left: 30px;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    
+    .pie_de_pagina div {
+        margin-top: 10px;
+    }
+    
+    p{
+        color: cornsilk;
+        text-align-last: left;
+        font-weight: bold;
+        line-height: 1,4;
+    }
+    
+    .redes{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* QUIENES SOMOS */
+    
+    .foto_fundador { 
+        color: black;
+        text-align: center;
+        
+    }
+    
+    .fotos_qs {
+          
+        height: 50vh;
+    }
+    
+    #carouselExampleCaptions {
+        padding-left: 400px;
+        
+    }
+    
+    /* ACCIONES */
+    
+    
+    
+    .card{
+    
+        margin: 1.8%;
+        padding: 0%;
+        background-image: linear-gradient(to right, #ae1d1d, #ae2020, #ae2323, #ae2626, #ae2929, #ae2c2c, #ae2e2e, #ae3131, #ae3434, #ae3737, #ae3a3a, #ae3d3d);
+        justify-content: center;
+    }
+    
+    .row {
+        justify-content: center;
+    }
+    
+    .row>* {
+    
+        max-width: 55%;
+    
+    }
+    
+    .card-title {
+        text-align: center;
+        background-color: ivory;
+    }
+    
+    .card-text {
+        color: black;
+    }
+     
+    @media screen and (max-width:992px){
+        .container-fluid {
+            display: grid;
+            grid-template-columns: auto;
+            background: url(./public/encabezado.jpg);
+            width: 100%;
+            height: 45vh;
+        }
+    
+        .centro_abajo li {
+            display: inline-block;
+            justify-items: center;
+            padding: 1rem 1rem;
+        }
+    } 
