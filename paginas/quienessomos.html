@@ -9,6 +9,7 @@
     <meta name="keywords"  content="ESPACIOS PUBLICOS, SOCIEDAD, VALORES, EMPRENDIMIENTO SOCIAL, MEJORAS, COLABORACIONES, DESARROLLO SOCIAL">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300;500;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
@@ -37,83 +38,48 @@
     </nav>
   </header>
     
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="../public/fundador.jpg" class="fotos_qs" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5 class="foto_fundador">Fundador - PABLO GIGENA </h5>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="../public/abrazo.jpg" class="fotos_qs " alt="...">
-            <div class="carousel-caption d-none d-md-block">
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+  <ul class="slider">
+    <li><input type="radio" id="sbutton1" name="sradio" checked><label for="sbutton1"></label><img src="../public/fundador.jpg" class="sliderphoto" alt=""></li>
+    <li><input type="radio" id="sbutton2" name="sradio"><label for="sbutton2"></label><img src="../public/abrazo.jpg" class="sliderphoto" alt="""></li>
+    <li><input type="radio" id="sbutton3" name="sradio"><label for="sbutton3"></label><img src="../public/intervenciones.jpg" class="sliderphoto" alt=""></li>
+    <li><input type="radio" id="sbutton4" name="sradio"><label for="sbutton4"></label><img src="../public/intervenciones1.jpg" class="sliderphoto"  alt=""></li>
+  </ul>
+    
     
       <section>
         <div>
-          <p class="informacion">Nuestra Misión: 
-            Crear Comunidad a través del desarrollo de contextos colaborativos revalorizando los espacios públicos.</p>
+          <h2 class="frase"> NUESTRA MISIÓN </h2>
+          <p class="informacion">Crear Comunidad a través del desarrollo de contextos colaborativos revalorizando los espacios públicos.</p>
         </div>
           <div>
-            <p class="informacion" >Nuestra Visión: 
-              Los vecinos socializando en espacios públicos seguros, saludables e inclusivos.</p>
+            <h2 class="frase"> NUESTRA VISIÓN </h2>
+            <p class="informacion" >Los vecinos socializando en espacios públicos seguros, saludables e inclusivos.</p>
           </div>
           <div>
-            <p class="informacion">Qué es Yo amo mi plaza?
+            <h2 class="frase"> QUÉ ES "YO AMO MI PLAZA"? </h2>
+            <p class="informacion">
               Es un EMPRENDIMIENTO SOCIAL que propende la mejora y revalorización de los espacios públicos a través del desarrollo de contextos colaborativos.
               El trabajar de manera participativa con las comunidades en la recuperación de sus espacios públicos, facilita  fortalecer los lazos de respeto y confianza, ingredientes  fundamentales para que la colaboración suceda, promoviendo sentimientos de pertenencia y orgullo con respecto del lugar donde se vive y la comunidad de la cual se es parte.
               </p>
           </div>
           <div>
-            <p class="informacion">Quiénes la integran “Yo amo mi plaza” 
-              Somos un equipo de trabajo multidisciplinario: expertos en liderazgo colaborativo, coaching organizacional y educativo, ingenieros agrónomos, arquitectos, comunicadores sociales, asistentes sociales, docentes, mujeres expertas en Genero, artistas plásticos, mosaiquistas, amas de casa, jóvenes, y otros.</p>
+            <h2 class="frase"> QUIÉNES INTEGRAN "YO AMO MI PLAZA" </h2>
+            <p class="informacion"> Somos un equipo de trabajo multidisciplinario: expertos en liderazgo colaborativo, coaching organizacional y educativo, ingenieros agrónomos, arquitectos, comunicadores sociales, asistentes sociales, docentes, mujeres expertas en Genero, artistas plásticos, mosaiquistas, amas de casa, jóvenes, y otros.</p>
           </div>
 
       </section>
           
     
     <footer>
-        <div class="pie_de_pagina" >
-            <div class="t-f">
-                <p>REDES SOCIALES</h1>
-            </div>
+      <div class="redes-container">
+        <ul>
+          <li> <a href="https://www.facebook.com/yoamomiplaza" class="Facebook"> <i class="fab fa-facebook"></i></a></li>
+          <li> <a href="https://www.instagram.com/yoamomiplazacba" class="Instagram"> <i class="fab fa-instagram"></i></a></li>
+          <li> <a href="https://wa.me/5493515373865" class="Whatsapp"> <i class="fab fa-whatsapp"></i></a></li>
+        </ul>
 
-            <div class="t-f" >
-                <ul class="t-f__redes">
-                    <li> <a href="https://www.facebook.com/yoamomiplaza"></a> Facebook</li>
-                    <li> <a href="https://www.instagram.com/yoamomiplazacba/"></a> Instagram</li>
-                </ul>
-                
-            </div>
-                
-            <div class="t-f">
-                <p>CONTACTO</h1>
-            </div>
-
-            <div class="t-f">
-                <p>+54 9</p>
-            </div>
-
-
-        </div>
-        
+      </div>
+         
     </footer>
         
 

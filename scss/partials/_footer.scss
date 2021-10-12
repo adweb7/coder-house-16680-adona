@@ -6,27 +6,58 @@ footer {
     height: 15vh;
 }
 
-.pie_de_pagina {
-    padding: 2px;
-    color: cornsilk;
-    padding-left: 30px;
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+:root {
+    --facebook: #3b5999;
+    --instagram: #e4405f;
+    --whatsapp: #25D366;
 }
 
-.pie_de_pagina div {
-    margin-top: 10px;
+.redes-container{
+    margin: 30px;
 }
 
-p{
-    color: cornsilk;
-    text-align-last: left;
-    font-weight: bold;
-    line-height: 1,4;
-}
-
-.redes{
-    list-style: none;
+.redes-container ul li{
     display: flex;
-    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes-container ul li {
+    display: inline-block;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    text-align:center;
+}
+
+.redes-container ul li a { 
+    display: block;
+    padding: 0 10px;
+    color: white;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow:  0 3px 5px 0px rgba(0, 0, 0, .2 ) ;
+}
+
+.redes-container ul:hover a {
+    filter: blur(2px) ;
+}
+
+.redes-container ul li a:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
+    filter: none;
+}
+
+.redes-container ul li .facebook:hover {
+    background: var(--facebook);
+}
+
+.redes-container ul li .instagram:hover {
+    background: var(--instagram);
+}
+
+.redes-container ul li .whatsapp:hover {
+    background: var(--whatsapp);
 }

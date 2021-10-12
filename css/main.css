@@ -48,37 +48,6 @@
         height: 60vh;
     }
     
-    .medio_pagina{
-        display: grid;
-        grid-template-columns: 33,3% 33,3%;
-    }
-    
-    .medio_pagina div ul {
-        display: flex;
-        flex-direction:row;
-        justify-content: space-between;
-    }
-    
-    .foto_medio {
-        width: 100%;
-        height: 50vh;
-    }
-    
-    .centro_abajo li {
-        display: inline-block;
-        justify-items: center;
-        padding: 3rem 8rem;
-    }
-    
-    .centro_abajo li a {
-        color: black;
-    }
-    
-    .centro_abajo li a:hover {
-        background-color: tomato;
-        overflow: hidden;
-    }
-    
     /*SECCION MEDIO ABAJO */
     
     .frase {
@@ -107,7 +76,19 @@
         padding: 10px;
     }
     
-    
+    .campaña-div {
+        width: auto;
+        height: auto;
+        justify-content: center;
+        padding-left: 25%;
+    }
+
+    .campaña { 
+        width: 600px;
+        height: 600px;
+        
+    }
+
     /* FOOTER - FINAL DE PAGINA */
     
     footer {
@@ -118,49 +99,105 @@
         height: 15vh;
     }
     
-    .pie_de_pagina {
-        padding: 2px;
-        color: cornsilk;
-        padding-left: 30px;
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
+    :root {
+        --facebook: #3b5999;
+        --instagram: #e4405f;
+        --whatsapp: #25D366;
     }
-    
-    .pie_de_pagina div {
-        margin-top: 10px;
-    }
-    
-    p{
-        color: cornsilk;
-        text-align-last: left;
-        font-weight: bold;
-        line-height: 1,4;
-    }
-    
-    .redes{
-        list-style: none;
+        
+    .redes-container ul li{
         display: flex;
-        flex-direction: column;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .redes-container{
+        margin: 30px;
+        justify-content: center;
     }
     
+    ol, ul {
+        padding-left: 30rem;
+    }
+
+    
+    .redes-container ul li {
+        display: inline-block;
+        margin: 0 5px;
+        width: 50px;
+        height: 50px;
+        text-align:center;
+    }
+    
+    .redes-container ul li a { 
+        display: block;
+        padding: 0 10px;
+        color: white;
+        line-height: 50px;
+        font-size: 18px;
+        box-shadow:  0 3px 5px 0px rgba(0, 0, 0, .2 ) ;
+        transition: .2s;
+    }
+    
+    .redes-container ul:hover a {
+        filter: blur(2px) ;
+    }
+    
+    .redes-container ul li a:hover {
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
+        filter: none;
+    }
+    
+    .redes-container ul li .facebook:hover {
+        background: var(--facebook);
+    }
+    
+    .redes-container ul li .instagram:hover {
+        background: var(--instagram);
+    }
+    
+    .redes-container ul li .whatsapp:hover {
+        background: var(--whatsapp);
+    }
+
+
+
     /* QUIENES SOMOS */
+    .slider {
+        width: 500px;
+        height: 300px;
+        position: relative;
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
     
-    .foto_fundador { 
-        color: black;
-        text-align: center;
+    .slider img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
         
     }
     
-    .fotos_qs {
-          
-        height: 50vh;
+    .slider input [type="radio"] {
+        position: relative;
+        z-index: 50;
+        margin: 10px;
+    
     }
     
-    #carouselExampleCaptions {
-        padding-left: 400px;
-        
-    }
-    
+    .slider input [type="radio"]:checked ~ img {
+        opacity: 1;
+    }   
+
+
+
     /* ACCIONES */
     
     

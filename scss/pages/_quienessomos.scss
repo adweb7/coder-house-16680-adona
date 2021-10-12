@@ -1,17 +1,33 @@
-.foto_fundador { 
-    color: black;
-    text-align: center;
-    
+.slider {
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    position: relative;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
-.fotos_qs {
-      
-    height: 50vh;
+.slider img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
 }
 
-#carouselExampleCaptions {
-    padding-left: 400px;
-    
+.slider input [type="radio"] {
+    position: relative;
+    z-index: 50;
+    margin: 10px;
+
+}
+
+.slider input [type="radio"]:checked img {
+    opacity: 1;
 }
 
 section {
