@@ -1,0 +1,17 @@
+/* ACTUA */
+  
+    @media screen and (max-width:992px){
+        .container-fluid {
+            display: grid;
+            grid-template-columns: auto;
+            background: url(./public/encabezado.jpg);
+            width: 100%;
+            height: 45vh;
+        }
+    
+        .centro_abajo li {
+            display: inline-block;
+            justify-items: center;
+            padding: 1rem 1rem;
+        }
+    } 

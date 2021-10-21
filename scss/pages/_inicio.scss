@@ -1,48 +1,57 @@
-.main_index {
-    display: flex;
-    justify-content: flex-start;
-    background-color: burlywood;
-    transform: translate(-35px, 0px);
-    margin: 5vh;
-    height: 60vh; }
+/*INICIO */
+.slider {
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+
+    ul {
+        display: flex;
+        padding: 0;
+        width: 400%;
+        height: 100%;
+        
+        animation: cambio 20s infinite alternate linear;
+    }
+
+    li {
+        width: 100%;
+        list-style: none;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+    
+    @media screen and (max-width:992px){
+      .container-fluid {
+          display: grid;
+          grid-template-columns: auto;
+          background: url(./public/encabezado.jpg);
+          width: 100%;
+          height: 45vh;
+      }
   
-  .medio_pagina {
-    display: grid;
-    grid-template-columns: 33,3% 33,3%; }
-  
-  .medio_pagina div ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; }
-  
-  .foto_medio {
-    width: 100%;
-    height: 50vh; }
-  
-  .centro_abajo li {
-    display: inline-block;
-    justify-items: center;
-    padding: 3rem 8rem; }
-  
-  .centro_abajo li a {
-    color: black; }
-  
-  .centro_abajo li a:hover {
-    background-color: tomato;
-    overflow: hidden; }
-  
-  /*SECCION MEDIO ABAJO */
-  
-  section p {
-    background-color: #cccccc;
-    color: black;
-    width: auto;
-    height: auto;
-    padding: 10px; }
-  
-  .parrafo_frase {
-    border: groove;
-    text-align: center;
-    margin: 20px;
-    padding: 10px; }
+      .centro_abajo li {
+          display: inline-block;
+          justify-items: center;
+          padding: 1rem 1rem;
+      }
+  } 
   

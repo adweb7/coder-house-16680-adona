@@ -1,11 +1,10 @@
+/*ACCIONES */
 
-    
-    .card{
+.card{
     
         margin: 1.8%;
         padding: 0%;
-        background-image: linear-gradient(to right, #ae1d1d, #ae2020, #ae2323, #ae2626, #ae2929, #ae2c2c, #ae2e2e, #ae3131, #ae3434, #ae3737, #ae3a3a, #ae3d3d);
-        justify-content: center;
+        background-color: tomato;
     }
     
     .row {
@@ -27,5 +26,22 @@
         color: black;
     }
 
+    .card-body {
+        background-color: burlywood;
+    }
 
-
+    @media screen and (max-width:992px){
+        .container-fluid {
+            display: grid;
+            grid-template-columns: auto;
+            background: url(./public/encabezado.jpg);
+            width: 100%;
+            height: 45vh;
+        }
+    
+        .centro_abajo li {
+            display: inline-block;
+            justify-items: center;
+            padding: 1rem 1rem;
+        }
+    } 
