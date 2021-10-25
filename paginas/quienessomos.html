@@ -10,64 +10,70 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300;500;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/index.css">
+    <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
 
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid" style="background-image: url(../public/encabezado.jpg);">
-        <a class="navbar-brand" href="../index.html"><img class="logo" src  ="../public/logoymp.jpg" alt=" " width="110" height="110" > </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-            <a class="nav-link" aria-current="page" href="../paginas/quienessomos.html">Quienes Somos</a>
-            <a class="nav-link" href="../paginas/acciones.html">Acciones</a>
-            <a class="nav-link" href="../paginas/novedades.html">Novedades</a>
-            <a class="nav-link" href="../paginas/actua.html" >Actuá</a>
-          </div>
-        </div>
-      </div>
+    <nav class="nav">
+      <ul>
+        <li>
+          <a class="navbar-brand" href="../index.html"><img class="logo" src  ="../public/logoymp.jpg" alt=" " width="110" height="110" > </a>
+        </li>
+        <li class="li-pages">
+          <a href="../index.html">Inicio</a>
+        </li>
+        <li class="li-pages li-activo">
+          <a href="../paginas/quienessomos.html">Quienes Somos</a>
+        </li>
+        <li class="li-pages">
+          <a href="../paginas/acciones.html">Acciones</a>
+        </li>
+        <li class="li-pages">
+          <a href="../paginas/novedades.html">Novedades</a>
+        </li>
+        <li class="li-pages">
+          <a href="../paginas/actua.html" >Actuá</a>
+        </li>
+        <li class="btn"> <a href="#"><i class="fas fa-bars"></i></a>
+        </li>
+
+      </ul>
+  
     </nav>
   </header>
 
-  <section class="seccion empresa" id="empresa">
-    
-    <article class="articulo somos">
-      <figure></figure>
-      <p class="parrafo">En <b class="letra-principal">YO AMO MI PLAZA</b> es un emprendimiento social que propende la mejora y revalorización de los espacios públicos a través del desarrollo de contextos colaborativos.
-        El trabajar de manera participativa con las comunidades en la recuperación de sus espacios públicos, facilita  fortalecer los lazos de respeto y confianza, ingredientes  fundamentales para que la colaboración suceda, promoviendo sentimientos de pertenencia y orgullo con respecto del lugar donde se vive y la comunidad de la cual se es parte.</p>
-    </article>
-    
-    <article class="articulo misionvision">
-      <div class="mision">
-        <h4 class="titulo "><b>MISIÓN</b></h4>
-        <p class="parrafo">
-          Crear Comunidad a través del desarrollo de contextos colaborativos revalorizando los espacios públicos.
-        </p>
+  <div class="div-acciones-qs">
+        
+    <div class="qs">
+      <img src="../public/vol.JPG" alt="">
+      <div class="text" >
+        <h1 >MISION</h1>
+        <p >Crear Comunidad a través del desarrollo de contextos colaborativos revalorizando los espacios públicos.
+      </p>
       </div>
-      <div class="vision">
-        <h4 class="titulo "> <b>VISIÓN</b></h4>
-        <p class="parrafo">
-          Los vecinos socializando en espacios públicos seguros, saludables e inclusivos
-        </p>
-      </div>
-      <div class="participantes">
-        <h4 class="titulo "><b>PARTICIPANTES</b></h4>
-        <p class="parrafo">
-          Somos un equipo de trabajo multidisciplinario: expertos en liderazgo colaborativo, coaching organizacional y educativo, ingenieros agrónomos, arquitectos, comunicadores sociales, asistentes sociales, docentes, mujeres expertas en Genero, artistas plásticos, mosaiquistas, amas de casa, jóvenes, y otros.
-        </p>
-      </div>
-    </article>
+    </div>
 
-  </section>          
-    
+    <div class="qs">
+      <img src="../public/vol.JPG" alt="">
+      <div class="text">
+        <h1 >VISION</h1>
+        <p > Los vecinos socializando en espacios públicos seguros, saludables e inclusivos</p>
+      </div>
+    </div>
+
+    <div class="qs">
+      <img src="../public/vol.JPG" alt="">
+      <div class="text">
+        <h1 >PARTICIPANTES</h1>
+        <p > Somos un equipo de trabajo multidisciplinario: expertos en liderazgo colaborativo, coaching organizacional y educativo, ingenieros agrónomos, arquitectos, comunicadores sociales, asistentes sociales, docentes, mujeres expertas en Genero, artistas plásticos, mosaiquistas, amas de casa, jóvenes, y otros.</p>
+      </div>
+    </div>
+                
+   </div>
+
     <footer>
       <div class="redes-container">
         <ul>
@@ -80,8 +86,16 @@
          
     </footer>
         
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script> 
+    <script>
+      $(document).ready (function (){
+        $('.btn').click (function (){
+          $('.li-pages').toggleClass ("show")
+          
+        })
+    
+      })
+    
+    </script>
     
 </body>
 </html>

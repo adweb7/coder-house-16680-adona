@@ -10,53 +10,64 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300;500;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/index.css">
+    <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
 
 
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid" style="background-image: url(../public/encabezado.jpg);">
-        <a class="navbar-brand" href="../index.html"><img class="logo" src  ="../public/logoymp.jpg" alt=" " width="110" height="110" > </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-            <a class="nav-link" aria-current="page" href="../paginas/quienessomos.html">Quienes Somos</a>
-            <a class="nav-link" href="../paginas/acciones.html">Acciones</a>
-            <a class="nav-link" href="../paginas/novedades.html">Novedades</a>
-            <a class="nav-link" href="../paginas/actua.html" >Actuá</a>
-          </div>
-        </div>
-      </div>
+    <nav class="nav">
+      <ul>
+        <li>
+          <a class="navbar-brand" href="../index.html"><img class="logo" src  ="../public/logoymp.jpg" alt=" " width="110" height="110" > </a>
+        </li>
+        <li class="li-pages">
+          <a href="../index.html">Inicio</a>
+        </li>
+        <li class="li-pages">
+          <a href="../paginas/quienessomos.html">Quienes Somos</a>
+        </li>
+        <li class="li-pages">
+          <a href="../paginas/acciones.html">Acciones</a>
+        </li>
+        <li class="li-pages li-activo">
+          <a href="../paginas/novedades.html">Novedades</a>
+        </li>
+        <li class="li-pages">
+          <a href="../paginas/actua.html" >Actuá</a>
+        </li>
+        <li class="btn"> <a href="#"><i class="fas fa-bars"></i></a>
+        </li>
+
+      </ul>
+  
     </nav>
   </header>
 
   </section>
-  
-  <main>
-    <h2 class="titulo"> LADRILLO SOLIDARIO </h2>
 
-    <div class="campaña-div">
-      <img src="../public/yoamomicomedor1.jpg" class="campaña" alt="">
+  <article>
+    <h1 class="titulo"> NOVEDADES </h1>
+</article>
+  
+  <div class="div-acciones">
+        
+    <div class="acciones">
+      <img src="../public/yoamomicomedor.jpg" class="card-img-top" alt="...">
+      <div class="text" >
+        <h2 >LADRILLO SOLIDARIO </h2>
+        <p >Se pone en marcha la campaña “Ladrillo Solidario”, que tendrá como objetivo la recaudación de fondos que permita la concreción de las obras planteadas.
+
+          Fundación para el Desarrollo Sostenible, Yo Amo Mi Plaza y VASO, tres organizaciones de la sociedad civil cordobesas, junto al grupo de arquitectos solidarios MerendArq se han unido por una causa común para mejorar las condiciones de infraestructura y contexto general de los comedores de barrio de la ciudad de Córdoba a través del Programa “Yo Amo Mi Comedor”.
+          
+          El Programa Yo Amo Mi Comedor busca contribuir al efectivo cumplimiento del derecho a la salud, el desarrollo y el juego en la niñez de la Ciudad de Córdoba, impactando además sobre 6 Objetivos de Desarrollo Sostenible (ODS) que la O.N.U. ha pautado para el año 2030  </p>
+      </p>
+      </div>
     </div>
-    
-    <p class="parrafo_frase">Se pone en marcha la campaña “Ladrillo Solidario”, que tendrá como objetivo la recaudación de fondos que permita la concreción de las obras planteadas.
-
-      Fundación para el Desarrollo Sostenible, Yo Amo Mi Plaza y VASO, tres organizaciones de la sociedad civil cordobesas, junto al grupo de arquitectos solidarios MerendArq se han unido por una causa común para mejorar las condiciones de infraestructura y contexto general de los comedores de barrio de la ciudad de Córdoba a través del Programa “Yo Amo Mi Comedor”.
-      
-      El Programa Yo Amo Mi Comedor busca contribuir al efectivo cumplimiento del derecho a la salud, el desarrollo y el juego en la niñez de la Ciudad de Córdoba, impactando además sobre 6 Objetivos de Desarrollo Sostenible (ODS) que la O.N.U. ha pautado para el año 2030  </esse> </p>
   
-
-
-  </main>
-    
+</div>
     
     <footer>
       <div class="redes-container">
@@ -71,6 +82,15 @@
         
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready (function (){
+        $('.btn').click (function (){
+          $('.li-pages').toggleClass ("show")
+          
+        })
+    
+      })
+    
+    </script>
 </body>
 </html>

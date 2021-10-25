@@ -84,27 +84,45 @@ html {
   height: 600px; }
 
 /* HEADER */
-.container-fluid {
-  display: grid;
-  grid-template-columns: auto;
-  background: url(/public/encabezado.jpg);
-  width: 100%;
-  height: 20vh; }
+.nav {
+  background-image: url("../public/encabezado.jpg"); }
 
-.navbar-light .navbar-nav .nav-link {
-  color: white;
-  padding-right: 4.6rem;
-  padding-left: 0.5rem; }
+.nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; }
+  .nav ul li {
+    padding: 20px;
+    padding-top: 15px;
+    padding-bottom: 5px; }
+    .nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 20px; }
+    .nav ul li a:hover {
+      background-color: tomato; }
+  .nav ul li:first-of-type {
+    padding-right: 50px; }
+  .nav ul .btn {
+    display: none; }
+  .nav ul .li-pages {
+    order: 3; }
+  .nav ul .li-activo a {
+    color: yellow; }
 
-div a:hover {
-  background-color: tomato;
-  padding-right: 0.6rem;
-  padding-left: 0.5rem; }
-
-.navbar-collapse {
-  flex-basis: 100%;
-  flex-grow: initial;
-  align-items: center; }
+@media all and (max-width: 900px) {
+  .nav ul .btn {
+    display: block; }
+  .nav .li-pages {
+    display: none;
+    width: 100%; }
+  .nav .logo.show {
+    padding-left: 10px; }
+  .nav .li-pages.show {
+    display: block;
+    text-align: center; } }
 
 /* PAGES */
 /*INICIO */
@@ -114,7 +132,6 @@ div a:hover {
   overflow: hidden; }
   .slider ul {
     display: flex;
-    padding: 0;
     width: 400%;
     height: 100%;
     animation: cambio 20s infinite alternate linear; }
@@ -156,28 +173,36 @@ div a:hover {
     padding: 1rem 1rem; } }
 
 /*QUIENES SOMOS */
-.empresa .titulo {
-  font-size: 1.6em;
-  padding-top: .5em;
-  font-weight: 300; }
-
-.empresa .titulo b {
-  font-weight: 400;
-  align-content: center; }
-
-.empresa .somos {
-  background: -webkit-linear-gradient(45deg, #0b4667 0%, #588bb7 100%);
-  background: linear-gradient(45deg, #0b4667 0%, #588bb7 100%);
-  color: #fff; }
-
-.empresa .somos .parrafo {
-  padding: 2em;
-  font-size: 1.2em;
-  font-weight: 300; }
-
-.empresa .misionvision {
-  background-color: #fff;
-  padding: 2em 2em 4em; }
+.div-acciones-qs {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  flex-basis: 500px;
+  justify-content: center;
+  gap: 15px; }
+  .div-acciones-qs .qs {
+    margin-top: 10px;
+    margin-bottom: 18px;
+    padding: 15px;
+    padding-top: 10px;
+    background-color: burlywood;
+    max-width: 500px;
+    justify-content: center;
+    display: grid;
+    grid-column: 1;
+    grid-row: 2;
+    grid-template-areas: "img" "text";
+    grid-template-rows: 150px;
+    grid-template-columns: 300px;
+    gap: 10px; }
+    .div-acciones-qs .qs img {
+      max-height: 100%;
+      grid-area: img;
+      justify-self: center; }
+    .div-acciones-qs .qs .text {
+      grid-area: text; }
+    .div-acciones-qs .qs .text p {
+      word-break: break-all; }
 
 @media screen and (max-width: 992px) {
   .container-fluid {
@@ -188,38 +213,36 @@ div a:hover {
     height: 45vh; } }
 
 /*ACCIONES */
-.card {
-  margin: 1.8%;
-  padding: 0%;
-  background-color: tomato; }
+.div-acciones {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  flex-basis: 500px;
+  justify-content: center;
+  gap: 15px; }
 
-.row {
-  justify-content: center; }
-
-.row > * {
-  max-width: 55%; }
-
-.card-title {
-  text-align: center;
-  background-color: ivory; }
-
-.card-text {
-  color: black; }
-
-.card-body {
-  background-color: burlywood; }
-
-@media screen and (max-width: 992px) {
-  .container-fluid {
-    display: grid;
-    grid-template-columns: auto;
-    background: url(./public/encabezado.jpg);
-    width: 100%;
-    height: 45vh; }
-  .centro_abajo li {
-    display: inline-block;
-    justify-items: center;
-    padding: 1rem 1rem; } }
+.acciones {
+  margin-bottom: 18px;
+  padding: 15px;
+  padding-top: 10px;
+  background-color: burlywood;
+  max-width: 500px;
+  justify-content: center;
+  display: grid;
+  grid-column: 1;
+  grid-row: 2;
+  grid-template-areas: "img" "text";
+  grid-template-rows: 300px;
+  grid-template-columns: 500px;
+  gap: 10px; }
+  .acciones img {
+    max-height: 100%;
+    grid-area: img;
+    justify-self: center; }
+  .acciones .text {
+    grid-area: text; }
+  .acciones .text p {
+    word-break: break-all; }
 
 /*NOVEDADES */
 #detalles {
@@ -245,6 +268,8 @@ div a:hover {
 
 section p {
   background-color: burlywood;
+  word-break: break-all;
+  text-align: center;
   color: black;
   width: auto;
   height: auto;
@@ -269,6 +294,37 @@ section p {
     padding: 1rem 1rem; } }
 
 /* ACTUA */
+.div-acciones-qs {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  flex-basis: 500px;
+  justify-content: center;
+  gap: 15px; }
+  .div-acciones-qs .qs-actua {
+    margin-top: 10px;
+    margin-bottom: 18px;
+    padding: 15px;
+    padding-top: 10px;
+    background-color: burlywood;
+    max-width: 500px;
+    justify-content: center;
+    display: grid;
+    grid-column: 1;
+    grid-row: 2;
+    grid-template-areas: "img" "text";
+    grid-template-rows: 214px;
+    grid-template-columns: 300px;
+    gap: 10px; }
+    .div-acciones-qs .qs-actua img {
+      max-height: 100%;
+      grid-area: img;
+      justify-self: center; }
+    .div-acciones-qs .qs-actua .text {
+      grid-area: text; }
+    .div-acciones-qs .qs-actua .text p {
+      word-break: break-all; }
+
 @media screen and (max-width: 992px) {
   .container-fluid {
     display: grid;

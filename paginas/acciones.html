@@ -10,65 +10,73 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300;500;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/index.css">
+    <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
 
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid" style="background-image: url(../public/encabezado.jpg);" >
-        <a class="navbar-brand" href="../index.html"><img class="logo" src  ="../public/logoymp.jpg" alt=" " width="110" height="110" > </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-            <a class="nav-link" aria-current="page" href="../paginas/quienessomos.html">Quienes Somos</a>
-            <a class="nav-link" href="../paginas/acciones.html">Acciones</a>
-            <a class="nav-link" href="../paginas/novedades.html">Novedades</a>
-            <a class="nav-link" href="../paginas/actua.html" >Actuá</a>
-          </div>
-        </div>
-      </div>
+    
+    <nav class="nav">
+      <ul>
+        <li>
+          <a class="navbar-brand" href="../index.html"><img class="logo" src  ="../public/logoymp.jpg" alt=" " width="110" height="110" > </a>
+        </li>
+        <li class="li-pages">
+          <a href="../index.html">Inicio</a>
+        </li>
+        <li class="li-pages">
+          <a href="../paginas/quienessomos.html">Quienes Somos</a>
+        </li>
+        <li class="li-pages li-activo">
+          <a href="../paginas/acciones.html">Acciones</a>
+        </li>
+        <li class="li-pages">
+          <a href="../paginas/novedades.html">Novedades</a>
+        </li>
+        <li class="li-pages">
+          <a href="../paginas/actua.html" >Actuá</a>
+        </li>
+        <li class="btn"> <a href="#"><i class="fas fa-bars"></i></a>
+        </li>
+
+      </ul>
+  
     </nav>
   </header>
 
     <article>
-        <h2 class="titulo"> ACCIONES </h2>
+        <h1 class="titulo"> ACCIONES </h1>
     </article>
 
-    <div class="row">
-        <div class="col-sm-8">
-          <div class="card">
+    <div class="div-acciones">
+        
+          <div class="acciones">
             <img src="../public/sueñosnavidad.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">SUEÑOS DE NAVIDAD</h5>
-              <p class="card-text">VASO y YO AMO MI PLAZA  se unieron para cumplir los SUEÑOS DE NAVIDAD y brindar un gran un gesto de amor hacia las familias y niños de comedores barriales de Córdoba!!
+            <div class="text" >
+              <h2 >SUEÑOS DE NAVIDAD</h2>
+              <p >VASO y YO AMO MI PLAZA  se unieron para cumplir los SUEÑOS DE NAVIDAD y brindar un gran un gesto de amor hacia las familias y niños de comedores barriales de Córdoba!!
                 300 familias recibirán muchos alimentos para tener una rica y saludable cena navideña y celebrar en familia!!
                 Menú navideño:
                 -Pollo con ensalada jardineras
                 -Ensalada de frutas.
                 -Para el copetín, compartiremos deliciosas y nutritivas nueces! 
-            </p></p>
+            </p>
             </div>
           </div>
-        </div>
-        <div class="col-sm-8">
-          <div class="card">
+
+          <div class="acciones" >
             <img src="../public/banderaplaza.jpg" class="card-img-top" alt="..." width="auto" height="auto">
-            <div class="card-body">
-              <h5 class="card-title">ASENTAMIENTO DE REMEDIOS DE ESCALADA</h5>
-              <p class="card-text"> Un muro dividía, separaba, o marginaba el asentamiento.
+            <div class="text">
+              <h2 >ASENTAMIENTO DE REMEDIOS DE ESCALADA</h2>
+              <p > Un muro dividía, separaba, o marginaba el asentamiento.
                 YO AMO MI PLAZA, con muralistas, voluntarios y vecinos, 
                 convirtieron ese muro en una paleta de colores,
                 un muro que en lugar de ojitos marginados,  empezo a iluminar los ojos de los vecinos, y dibujarles una gran sonrisa.</p>
             </div>
           </div>
-        </div>
+        
       </div>
 
    
@@ -83,6 +91,17 @@
 
       </div>
         
-    </footer>   
+    </footer>
+    <script>
+      $(document).ready (function (){
+        $('.btn').click (function (){
+          $('.li-pages').toggleClass ("show")
+          
+        })
+    
+      })
+    
+    </script>
+    
 </body>
 </html>

@@ -1,36 +1,48 @@
 /*QUIENES SOMOS */
+.div-acciones-qs {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  flex-basis: 500px;
+  justify-content: center;
+  gap: 15px;
+  
+  .qs {
+    margin-top: 10px;
+    margin-bottom: 18px;
+    padding: 15px;
+    padding-top: 10px;
+    background-color: burlywood;
+    max-width:500px ;
+    justify-content: center;
+    display: grid;
+    grid-column: 1;
+    grid-row: 2;
+    grid-template-areas:"img"
+                        "text"  ;
+    grid-template-rows: 150px;
+    grid-template-columns: 300px;
+    gap: 10px;
+    
 
-  
-  .empresa .titulo {
-    font-size: 1.6em;
-    padding-top: .5em;
-    font-weight: 300;
+    img{
 
+        max-height: 100%;
+        grid-area: img ;
+        justify-self: center;
+    }   
+
+    .text {
+      grid-area: text;
   }
-  
-  .empresa .titulo b {
-    font-weight: 400;
-    align-content: center;
+
+  .text p {
+      word-break: break-all;
   }
-  
-  .empresa .somos {
-    background: -webkit-linear-gradient(45deg, rgb(11, 70, 103) 0%, rgb(88, 139, 183) 100%);
-    background: linear-gradient(45deg, rgb(11, 70, 103) 0%, rgb(88, 139, 183) 100%);
-    color: #fff;
-  }
-  
-  .empresa .somos .parrafo {
-    padding: 2em;
-    font-size: 1.2em;
-    font-weight: 300;
-  }
-  
-  .empresa .misionvision {
-    background-color: #fff;
-    padding: 2em 2em 4em;
-  }
-  
- 
+}
+
+}
+
 
   
 
