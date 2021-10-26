@@ -1,62 +1,74 @@
 /*FOOTER */
 
 footer {
-    display: grid;
-    grid-template-columns: auto;
-    background-image: linear-gradient(to right, #000000, #010001, #020002, #030003, #020005, #020007, #010008, #00000a, #00000c, #00000d, #00000f, #000010);
-    width: 100%;
-    height: 15vh; 
-   
-  }
-  
-    :root {
-      --facebook: #3b5999;
-      --instagram: #e4405f;
-      --whatsapp: #25D366;
-  }
-  
-  .redes-container{
-    margin: 30px;
-    justify-content: center;
-  }
-      
-  
-  .redes-container ul li {
-      display: inline-block;
-      margin: 0 5px;
-      width: 50px;
-      height: 50px;
-      align-items: center;
-      text-align:center;
-  }
-  
-  .redes-container ul li a { 
-      display: block;
-      padding: 0 10px;
-      color: white;
-      line-height: 50px;
-      font-size: 18px;
-      box-shadow:  0 3px 5px 0px rgba(0, 0, 0, .2 ) ;
-  }
-  
-  .redes-container ul:hover a {
-    filter: blur(2px) ;
-  }
-  
-  .redes-container ul li a:hover {
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
-    filter: none;
-  }
-  
-  .redes-container ul li .facebook:hover {
-    background: var(--facebook);
-  }
-  
-  .redes-container ul li .instagram:hover {
-    background: var(--instagram);
-  }
-  
-  .redes-container ul li .whatsapp:hover {
-    background: var(--whatsapp);
-  }
+  display: grid;
+  grid-template-columns: auto;
+  background-image: linear-gradient(
+    to right,
+    #000000,
+    #010001,
+    #020002,
+    #030003,
+    #020005,
+    #020007,
+    #010008,
+    #00000a,
+    #00000c,
+    #00000d,
+    #00000f,
+    #000010
+  );
+  width: 100%;
+  height: 15vh;
+}
+
+:root {
+  --facebook: #3b5999;
+  --instagram: #e4405f;
+  --whatsapp: #25d366;
+}
+
+.redes-container {
+  margin: 30px;
+  justify-content: center;
+}
+
+.redes-container ul li {
+  display: inline-block;
+  margin: 0 5px;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  text-align: center;
+}
+
+.redes-container ul li a {
+  display: block;
+  padding: 0 10px;
+  color: white;
+  line-height: 50px;
+  font-size: 18px;
+  box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.redes-container ul:hover a {
+  filter: blur(2px);
+}
+
+.redes-container ul li a:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+  filter: none;
+}
+
+.redes-container ul li .facebook:hover {
+  background: var(--facebook);
+}
+
+.redes-container ul li .instagram:hover {
+  background: var(--instagram);
+}
+
+.redes-container ul li .whatsapp:hover {
+  background: var(--whatsapp);
+}

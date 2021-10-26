@@ -6,54 +6,52 @@
     flex-basis: 500px;
     justify-content: center;
     gap: 15px;
-    
+
     .qs-actua {
-      margin-top: 10px;
-      margin-bottom: 18px;
-      padding: 15px;
-      padding-top: 10px;
-      background-color: burlywood;
-      max-width:500px ;
-      justify-content: center;
-      display: grid;
-      grid-column: 1;
-      grid-row: 2;
-      grid-template-areas:"img"
-                          "text"  ;
-      grid-template-rows: 214px;
-      grid-template-columns: 300px;
-      gap: 10px;
-      
-  
-      img{
-  
-          max-height: 100%;
-          grid-area: img ;
-          justify-self: center;
-      }   
-  
-      .text {
-        grid-area: text;
-    }
-  
-    .text p {
-        word-break: break-all;
-    }
-  }
-  
-  }  
-    @media screen and (max-width:992px){
-        .container-fluid {
-            display: grid;
-            grid-template-columns: auto;
-            background: url(./public/encabezado.jpg);
-            width: 100%;
-            height: 45vh;
+        margin-top: 10px;
+        margin-bottom: 18px;
+        padding: 15px;
+        padding-top: 10px;
+        background-color: burlywood;
+        max-width: 500px;
+        justify-content: center;
+        display: grid;
+        grid-column: 1;
+        grid-row: 2;
+        grid-template-areas:
+            "img"
+            "text";
+        grid-template-rows: 214px;
+        grid-template-columns: 300px;
+        gap: 10px;
+
+        img {
+            max-height: 100%;
+            grid-area: img;
+            justify-self: center;
         }
-    
-        .centro_abajo li {
-            display: inline-block;
-            justify-items: center;
-            padding: 1rem 1rem;
+
+        .text {
+            grid-area: text;
         }
-    } 
+
+        .text p {
+            word-break: break-all;
+        }
+    }
+}
+@media screen and (max-width: 992px) {
+    .container-fluid {
+        display: grid;
+        grid-template-columns: auto;
+        background: url(./public/encabezado.jpg);
+        width: 100%;
+        height: 45vh;
+    }
+
+    .centro_abajo li {
+        display: inline-block;
+        justify-items: center;
+        padding: 1rem 1rem;
+    }
+}

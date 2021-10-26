@@ -12,7 +12,7 @@ footer {
 :root {
   --facebook: #3b5999;
   --instagram: #e4405f;
-  --whatsapp: #25D366; }
+  --whatsapp: #25d366; }
 
 .redes-container {
   margin: 30px;
@@ -57,12 +57,17 @@ footer {
   padding: 0%; }
 
 html {
-  font-family: 'Arima Madurai', cursive; }
+  font-family: "Arima Madurai", cursive; }
 
 /*REPETIDO EN VARIAS PAGINAS */
+h1,
+h2 {
+  font-size: 1.2em;
+  text-align: center; }
+
 .titulo {
   font-size: 1.6em;
-  padding-top: .5em;
+  padding-top: 0.5em;
   font-weight: 300;
   text-align: center;
   font-weight: 400; }
@@ -102,7 +107,8 @@ html {
       color: white;
       font-size: 20px; }
     .nav ul li a:hover {
-      background-color: tomato; }
+      text-decoration: underline;
+      color: #ffb42a; }
   .nav ul li:first-of-type {
     padding-right: 50px; }
   .nav ul .btn {
@@ -113,6 +119,8 @@ html {
     color: yellow; }
 
 @media all and (max-width: 900px) {
+  .nav {
+    transition: .3s linear; }
   .nav ul .btn {
     display: block; }
   .nav .li-pages {
@@ -292,6 +300,10 @@ section p {
     display: inline-block;
     justify-items: center;
     padding: 1rem 1rem; } }
+
+@media screen and (max-width: 500px) {
+  .acciones {
+    grid-template-columns: 300px; } }
 
 /* ACTUA */
 .div-acciones-qs {

@@ -1,20 +1,24 @@
 /*RESETEO*/
-*{
+* {
     margin: 0%;
     padding: 0%;
-    }
+}
 
-
-
-html{
-        font-family: 'Arima Madurai', cursive; 
-    }
+html {
+    font-family: "Arima Madurai", cursive;
+}
 
 /*REPETIDO EN VARIAS PAGINAS */
 
+h1,
+h2 {
+    font-size: 1.2em;
+    text-align: center;
+}
+
 .titulo {
     font-size: 1.6em;
-    padding-top: .5em;
+    padding-top: 0.5em;
     font-weight: 300;
     text-align: center;
     font-weight: 400;
@@ -34,8 +38,7 @@ html{
     padding-left: 25%;
 }
 
-.campaña { 
+.campaña {
     width: 600px;
     height: 600px;
-    
 }
